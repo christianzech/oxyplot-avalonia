@@ -36,6 +36,7 @@ namespace SimpleDemo
             OxyPlotModule.EnsureLoaded();
             AppBuilder.Configure<App>()
                 .UsePlatformDetect()
+                .LogToTrace()
                 .StartWithClassicDesktopLifetime(args);
         }
     }
